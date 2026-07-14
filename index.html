@@ -234,20 +234,6 @@
         </div>
     </footer>
 
-    <script>
-        // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Intercepción del formulario para simulación de envío (UX)
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const alertBox = document.getElementById('form-alert');
-            alertBox.style.display = 'block';
-            this.reset();
-            setTimeout(() => {
-                alertBox.style.display = 'none';
-            }, 5000);
-        });
-    </script>
+    
 </body>
 </html>
